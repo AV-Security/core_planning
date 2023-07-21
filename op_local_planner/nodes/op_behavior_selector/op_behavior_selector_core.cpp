@@ -135,7 +135,7 @@ void BehaviorGen::UpdatePlanningParams(ros::NodeHandle& _nh)
 
 	_nh.getParam("/op_common_params/horizontalSafetyDistance", m_PlanningParams.horizontalSafetyDistancel);
 	_nh.getParam("/op_common_params/verticalSafetyDistance", m_PlanningParams.verticalSafetyDistance);
-
+  	_nh.getParam("/op_common_params/enableFinalLocalPathUpdate", m_PlanningParams.enableFinalLocalPathUpdate);
 	_nh.getParam("/op_common_params/enableLaneChange", m_PlanningParams.enableLaneChange);
 
 	_nh.getParam("/op_common_params/front_length", m_CarInfo.front_length);

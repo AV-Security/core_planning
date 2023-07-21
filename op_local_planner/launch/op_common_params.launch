@@ -29,7 +29,7 @@
 	<arg name="enableTrafficLightBehavior" 	default="false" />
 	<arg name="enableStopSignBehavior" 		default="false" />	
 	<arg name="enableLaneChange" 			default="false" />	
-	
+	<arg name="enableFinalLocalPathUpdate" 	default="true" />	
 	<!-- Vehicle Info, shared with controller and simulation -->
 	<arg name="height" 						default="1.47"  />
 	<arg name="front_length"				default="1.0"  />
@@ -92,6 +92,7 @@
 		<param name="enableTrafficLightBehavior" value="$(arg enableTrafficLightBehavior)" />
 		<param name="enableStopSignBehavior" 	value="$(arg enableStopSignBehavior)" />	
 		<param name="enableLaneChange" 			value="$(arg enableLaneChange)" />
+		<param name="enableFinalLocalPathUpdate" value="$(arg enableFinalLocalPathUpdate)" />
 		
 		<param name="height" 					value="$(arg height)"  />		
 		<param name="front_length" 				value="$(arg front_length)"  />
